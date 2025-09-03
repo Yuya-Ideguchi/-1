@@ -110,16 +110,43 @@ public class CurriculamA {
       
  /**************************
  *       
- *   【概要】Qes8　
+ *   【概要】Qes8　priceというdouble型を宣言し、99.99を代入
+ *                 priceをint型に変換し、誠意数価格:99とコンソールに表示
  *   
  **************************/      
       
-      
-      
-      
-      
-      
-      
+     double price = 99.99;
+     int intPrice =(int) price;
+    		
+     System.out.println("整数価格:" + intPrice);
+    		
+ /**************************
+  *       
+  *   【概要】Qes9　String 型の変数 numStr に "123" を代入numStr を int 型に変換し、
+                    変換後の値: の後ろにnumStr + 10 した結果をコンソールに表示
+  *   
+  **************************/   
+     
+     String numStr = "123";
+    		  
+     int intNumStr = Integer.parseInt(numStr);
+     
+     System.out.println("変換後の値:" + (intNumStr + 10));
+     
+ /**************************
+  *       
+  *   【概要】Qes10　int型の変数numに50を代入
+  *                 numをｓｔリンｇ型に変換し、得点:50点の形で表示
+  *   
+      **************************/      
+     
+     int num = 50;
+
+     String str = String.valueOf(num);
+     
+     System.out.println("得点:" + num + "点");
+     
+     
       
 	}
 
