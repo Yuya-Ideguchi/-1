@@ -123,7 +123,7 @@ public class CurriculamA {
  /**************************
   *       
   *   【概要】Qes9　String 型の変数 numStr に "123" を代入numStr を int 型に変換し、
-                    変換後の値: の後ろにnumStr + 10 した結果をコンソールに表示
+  *                 変換後の値: の後ろにnumStr + 10 した結果をコンソールに表示
   *   
   **************************/   
      
@@ -136,9 +136,9 @@ public class CurriculamA {
  /**************************
   *       
   *   【概要】Qes10　int型の変数numに50を代入
-  *                 numをｓｔリンｇ型に変換し、得点:50点の形で表示
+  *                 numをstring型に変換し、得点:50点の形で表示
   *   
-      **************************/      
+  **************************/      
      
      int num = 50;
 
@@ -146,8 +146,50 @@ public class CurriculamA {
      
      System.out.println("得点:" + num + "点");
      
+ /**************************
+  *
+  *   【概要】Qes11 条件を満たすプログラムを条件演算子を使用して作成
+  *               →int型の変数aに10を代入
+  *               →int型の変数bに20を代入
+  *               →aがbより小さいかどうかをboolean変数resultに代入
+  *               →resultの値を表示
+  *   
+  **************************/    
      
-      
+     int a = 10;
+     int b = 20;
+     
+     boolean result =(a<b);
+     
+     System.out.println(result);
+     
+ /**************************
+  *       
+  *   【概要】Qes12　int型の変数xに15を代入
+  *                  xが10以上ならOK、そうでなければNGを表示
+  *   
+  **************************/     
+     
+     int x = 15;
+     System.out.println(x >=10 ? "OK" : "NG");
+     
+ /**************************
+  *       
+  *   【概要】Qes12　String text = 私はjavaが好きです。　javaは楽しい！という文章の中にある
+  *   　　　　　　　 javaをPythonに変更
+  *   
+  **************************/  
+     
+     String text ="私はJavaが好きです。　Javaは楽しい！";
+     
+     text = "私はPythonが好きです。　Pythonは楽しい！";
+     
+     System.out.println(text);
+     
+     
+     
+     
+     
 	}
 
 }
