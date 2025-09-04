@@ -182,7 +182,7 @@ public class CurriculamA {
      
      String text ="私はJavaが好きです。　Javaは楽しい！";
      
-     text = "私はPythonが好きです。　Pythonは楽しい！";
+     text = text.replace("Java","Python");
      
      System.out.println(text);
      
