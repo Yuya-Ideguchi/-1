@@ -175,7 +175,7 @@ public class CurriculamA {
      
  /**************************
   *       
-  *   【概要】Qes12　String text = 私はjavaが好きです。　javaは楽しい！という文章の中にある
+  *   【概要】Qes13　String text = 私はjavaが好きです。　javaは楽しい！という文章の中にある
   *   　　　　　　　 javaをPythonに変更
   *   
   **************************/  
