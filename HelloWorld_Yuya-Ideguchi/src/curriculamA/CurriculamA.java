@@ -19,16 +19,16 @@ public class CurriculamA {
  *　【概要】Qes1　変数宣言	
  *
  **************************/
-	 byte byteNum;
-	 short shortNum;
-	 int intNum;
-	 long longNum;
-	 float floatNum;
-	 double doubleNum;
-	 char letter;
-	 String letters;
-	 boolean isBoolean;
-
+	 byte byteNum = 0;
+	 short shortNum = 0;
+	 int intNum = 0;
+	 long longNum = 0;
+	 float floatNum = 0;
+	 double doubleNum = 0;
+	 char letter = 0;
+	 String letters = null;
+	 boolean isBoolean = false;
+	 
 /**************************
  *  
  *  【概要】Qes2　変数の代入 
@@ -144,7 +144,7 @@ public class CurriculamA {
 
      String str = String.valueOf(num);
      
-     System.out.println("得点:" + num + "点");
+     System.out.println("得点:" + str + "点");
      
  /**************************
   *
