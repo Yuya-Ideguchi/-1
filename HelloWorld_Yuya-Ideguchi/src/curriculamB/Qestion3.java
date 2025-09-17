@@ -1,5 +1,7 @@
 package curriculamB;
 
+import java.util.Scanner;
+
 public class Qestion3 {
 
 	public static void main(String[] args) {
@@ -21,7 +23,7 @@ public class Qestion3 {
  *  
  *****************************/	
 		
-		for(int w = 2; w <=20; w++){
+		for(int w = 2; w <=20; w++) {
 			if(w % 2 == 0) {
 				System.out.println(w);
 			}
@@ -77,6 +79,12 @@ public class Qestion3 {
  *  
  *****************************/	
 		
+		int count = 1;
+		
+		while (count <= 10) {
+			System.out.println(count);
+			count++;
+		}
 		
 		
 /*****************************
@@ -85,7 +93,14 @@ public class Qestion3 {
  *  
  *****************************/	
 		
+		int count2 = 1;
 		
+		while(count2 <= 20 ) {
+			if(count2 % 2 == 0) {
+				System.out.println(count2);
+			}
+			count2++;
+		}
 		
 /*****************************
  *  
@@ -93,6 +108,12 @@ public class Qestion3 {
  *  
  *****************************/	
 		
+		int count3 = 10;
+		
+		while(count3 >= 1 ){
+			System.out.println(count3);
+			count3--;	
+		}
 		
 		
 /*****************************
@@ -101,6 +122,15 @@ public class Qestion3 {
  *  
  *****************************/	
 		
+		int sum1 = 0;
+		int count4 = 1;
+		
+		while(count4 <= 100) {
+			sum1 += count4;
+			count4++;
+		}
+		
+		System.out.println(sum1);
 		
 		
 /*****************************
@@ -111,7 +141,16 @@ public class Qestion3 {
  *              →※Scannerを使用、While分を使用
  *              
  *****************************/	
+
+		Scanner scanner = new Scanner(System.in);
+		int input = -1;
 		
+		while(input != 0) {
+			System.out.println("数値を入力してください（0で終了）: ");
+			input = scanner.nextInt();
+		}
+		
+		System.out.println("終了しました");
 		
 		
 /*****************************
