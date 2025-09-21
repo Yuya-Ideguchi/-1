@@ -2,6 +2,9 @@ package curriculamB;
 
 public class Question2 {
 
+	/**
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
 
@@ -141,12 +144,14 @@ public class Question2 {
  *  
  *****************************/			 
 		 
-		 String text = null;
+		 String text = "";
 		 
 		 if(text == null || text.isEmpty()){
 			 System.out.println("入力が無効です");
-			 
+		 }else{
+			 System.out.println(text);
 		 }
+		 
 		 
  /*****************************
  *  
