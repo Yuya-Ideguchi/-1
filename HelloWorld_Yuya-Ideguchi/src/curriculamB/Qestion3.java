@@ -141,33 +141,31 @@ public class Qestion3 {
  *****************************/	
 
 		Scanner scanner = new Scanner(System.in);
-		int input = 0;
-		
-		while(input != 0) {
-			System.out.println("数値を入力してください（0で終了）: ");
-			input = scanner.nextInt();
-		}
-		
-		System.out.println("終了しました");
-		scanner.close();
+        int input;
+
+        do {
+            System.out.print("数値を入力してください（0で終了）: ");
+            input = scanner.nextInt();
+        } while (input != 0);
+
+        System.out.println("終了しました");
+        scanner.close();
 		
 		
 		
 /*****************************
  *  
- *   【概要】Qes11 for文を使用して九九を出力　(途中)
+ *   【概要】Qes11 for文を使用して九九を出力
  *  
  *****************************/	
 		
 		for (int i = 1; i <= 9; i++) {
-            String line = "";
+            StringBuilder line = new StringBuilder();
             for (int j = 1; j <= 9; j++) {
-                
-                line += String.format("%02d * %02d = %02d  ", i, j, i * j);
-
-                
-                if (j % 3 == 0 && j != 9) {
-                    line += "||  ";
+                String expression = String.format("%02d * %02d = %02d", i, j, i * j);
+                line.append(expression);
+                if (j != 9) {
+                    line.append(" || ");
                 }
             }
             System.out.println(line);
@@ -176,7 +174,7 @@ public class Qestion3 {
 		
 /*****************************
  *  
- *   【概要】Qes8 12
+ *   【概要】Qes12
  *   　　　     →
  *  
  *****************************/	
