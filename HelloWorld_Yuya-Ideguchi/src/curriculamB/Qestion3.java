@@ -1,5 +1,6 @@
 package curriculamB;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class Qestion3 {
@@ -149,9 +150,9 @@ public class Qestion3 {
         } while (input != 0);
 
         System.out.println("終了しました");
-        scanner.close();
 		
 		
+        scanner.nextLine();
 		
 /*****************************
  *  
@@ -174,12 +175,65 @@ public class Qestion3 {
 		
 /*****************************
  *  
- *   【概要】Qes12
- *   　　　     →
+ *   【概要】Qes12 入力した商品の残り台数が出力されるシステムを構築
+ *   　　　     →・拡張for文・Switch文・条件演算子を使用すること　※普通のif文は使用不可
+ *　　　　　　　　・Switch文内でテレビとディスプレイは続けて書き、条件演算子で各項目を出力される値を変更してください
+ *　　　　　　　　・テレビとディスプレイは同じ商品扱いとし、二つの合計値は常に11になるようにしてください。 
+ *　　　　　　　　・例：テレビと受け取った場合、→「テレビの残り台数は〇台です」※〇はランダムで出た数字　ディスプレイは（11-〇）の値
+ *　　　　　　　　・入力される値は右記の表のどれかが入力され、入力回数の縛りはありません
+ *　　　　　　　・入力された値は「、」区切りで指定してください
+ *　　　　　　　・そのほかの値が入力された場合下記を出力されるようにしてください
+ *　　　　　　　・残り台数は0〜11までのランダムな値が出力されるようにしてください
  *  
  *****************************/	
 		
-		
+        System.out.println("商品名を「、」区切りで入力してください：");
+
+        String productInput = scanner.nextLine();
+        String[] products = productInput.split("、");
+
+        Random rand = new Random();
+
+        int tvStock = rand.nextInt(12);  
+        int displayStock = 11 - tvStock;
+
+        for (String product : products) {
+            product = product.trim();
+
+            switch (product) {
+                case "パソコン":
+                    System.out.println("パソコンの残り台数は" + rand.nextInt(12) + "台です");
+                    break;
+
+                case "冷蔵庫":
+                    System.out.println("冷蔵庫の残り台数は" + rand.nextInt(12) + "台です");
+                    break;
+
+                case "扇風機":
+                    System.out.println("扇風機の残り台数は" + rand.nextInt(12) + "台です");
+                    break;
+
+                case "洗濯機":
+                    System.out.println("洗濯機の残り台数は" + rand.nextInt(12) + "台です");
+                    break;
+
+                case "加湿器":
+                    System.out.println("加湿器の残り台数は" + rand.nextInt(12) + "台です");
+                    break;
+
+                case "テレビ":
+                case "ディスプレイ":
+                    int stock = product.equals("テレビ") ? tvStock : displayStock;
+                    System.out.println(product + "の残り台数は" + stock + "台です");
+                    break;
+
+                default:
+                    System.out.println("『 " + product + " 』は指定の商品ではありません");
+                    break;
+            }
+        }
+
+        scanner.close();
 		
 		
 		
