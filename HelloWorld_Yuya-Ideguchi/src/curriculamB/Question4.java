@@ -1,5 +1,7 @@
 package curriculamB;
 
+import java.util.Scanner;
+
 public class Question4 {
 
 	public static void main(String[] args) {
@@ -58,7 +60,23 @@ public class Question4 {
  *  
  *****************************/	
 		
+	     int[] numbers3 = {12,7,9,21,5,18};
+	     
+	     int max = numbers3[0];
+	     int min = numbers3[0];
+	     
+	     for(int  x = 1; x < numbers.length; x++) {
+	    	 if(numbers3[x] > max) {
+	    		 max = numbers3[x];
+	    	}
+	    	 if(numbers3[x] < min) {
+	    		 min = numbers3[x];
+	    	 }
+	     }
 		
+	     System.out.println("最大値:" + max);
+	     System.out.println("最大値:" + min);
+	     
 		
 /*****************************
  *  
@@ -68,7 +86,12 @@ public class Question4 {
  *  
  *****************************/	
 		
-		
+	     int[] numbers4 = {1,2,3,4,5};
+	     
+	     for(int y = 0; y < numbers4.length; y++) {
+	    	 System.out.println(numbers[y] * 2);
+	     }
+	     
 /*****************************
  *  
  *   【概要】Qes6　int 型の配列 {4, 7, 10, 15, 20} を用意する
@@ -76,6 +99,28 @@ public class Question4 {
  *　　　　　　　　→ 結果：（”入力した値”は配列に含まれています／含まれていません）
  *  
  *****************************/	
+	     
+	     int[] numbers5 = {4,7,10,15,20};
+	     
+	     Scanner scanner = new Scanner(System.in);
+	     System.out.println("数字を入力してください :");
+	     int input = scanner.nextInt();
+	     
+	     boolean found = false;
+	     for(int num : numbers5) {
+	    	 if(num == input) {
+	    		 found = true;
+	    		 break;
+	    	 }
+	     }
+	     
+	     if(found) {
+	    	 System.out.println("入力した値 :" + input + "は配列に含まれています");
+	     }else {
+	    	 System.out.println("入力した値　:" + input + "は配列に含まれていません");
+	     }
+	     
+	     scanner.close();
 	     
 	     
 /*****************************
