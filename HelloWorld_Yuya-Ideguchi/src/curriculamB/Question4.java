@@ -16,8 +16,8 @@ public class Question4 {
 		
 		int[] numbers = {1,2,3,4,5};
 		
-		for(int i = 0; i < numbers.length; i++) {
-			System.out.println(numbers[i]);
+		for(int z = 0; z < numbers.length; z++) {
+			System.out.println(numbers[z]);
 			
 		}
 		
@@ -130,6 +130,18 @@ public class Question4 {
  *  
  *****************************/	
 	     
+	     int[][] array = {
+	    		 {1,2},
+	    		 {3,4},
+	    		 {5,6}
+	     };
+	     for(int a = 0; a < array.length; a++) {
+	    	 for(int b = 0; b < array[a].length; b++) {
+	    		 System.out.print(array[a][b] + " ");
+	    	 }
+	    	     System.out.println();
+	     }
+	     
 	     
 /*****************************
  *  
@@ -138,6 +150,18 @@ public class Question4 {
  *      
  *****************************/	
 	     
+	     int [][] array1 = {
+	    		 {10,20,30},
+	    		 {40,50,60},
+	    		 {70,80,90}
+	     };
+	     int sum1 = 0;
+	      for(int c = 0; c < array1.length; c++) {
+	         for(int d = 0; d < array1[c].length; d++) {
+	    	 sum1 += array1[c][d];
+	       }
+	     }
+	     System.out.println("合計 :" + sum1);
 	     
 	     
 /*****************************
@@ -147,6 +171,32 @@ public class Question4 {
  *  
  *****************************/	
 	     
+	     int[][]array2 = {
+	    		 {12,15,8},
+	    		 {6,19,25},
+	    		 {30,2,10}
+	     };
+	     
+	     int max1 = array2[0][0];
+	     int min1 = array2[0][0];
+	     
+	     for(int e = 0; e < array2.length; e++) {
+	    	 for(int f = 0; f < array2[e].length; f++) {
+	    		 
+	    	 int value = array2[e][f];
+	    	 if(value > max1) {
+	    		 max1 = value;
+	    	 }
+	    	 if(value < min1) {
+	    		 min1 = value;
+	    	 }
+	       }
+	     }
+	     
+	     System.out.println("最大値　:" + max1);
+	     System.out.println("最小値　:" + min1);
+	     
+	     
 	     
 /*****************************
  *  
@@ -155,23 +205,33 @@ public class Question4 {
  *  
  *****************************/	
 	     
+	     int[][][] array3 = {
+	    		 {
+	    			 {1,2},
+	    		     {3,4},
+	    		     
+	    		 },
+	    		 {
+	    			 {5,6},
+	    		     {7,8}
+	    		 }
+	     };
+	     
+	     for(int g = 0; g < array3.length; g++) {
+	    	 for(int h = 0; h < array3[g].length; h++) {
+	    		 for(int i = 0; i < array3[g][h].length; i++) {
+	    			 System.out.print(array3[g][h][i] + "");
+	    		 }
+	    		 System.out.println();
+	    	 }
+	    	 System.out.println("");
+	     }
 	     
 	     
 	     
 	     
 	     
 	     
+	     }
 	     
-	     
-	     
-	     
-	     
-	     
-	     
-	     
-	     
-	     
-		
-	}
-
 }
