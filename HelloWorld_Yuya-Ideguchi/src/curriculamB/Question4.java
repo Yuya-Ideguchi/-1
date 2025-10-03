@@ -65,7 +65,7 @@ public class Question4 {
 	     int max = numbers3[0];
 	     int min = numbers3[0];
 	     
-	     for(int  x = 1; x < numbers.length; x++) {
+	     for(int  x = 1; x < numbers3.length; x++) {
 	    	 if(numbers3[x] > max) {
 	    		 max = numbers3[x];
 	    	}
@@ -75,7 +75,7 @@ public class Question4 {
 	     }
 		
 	     System.out.println("最大値:" + max);
-	     System.out.println("最大値:" + min);
+	     System.out.println("最小値:" + min);
 	     
 		
 /*****************************
@@ -120,7 +120,7 @@ public class Question4 {
 	    	 System.out.println("入力した値　:" + input + "は配列に含まれていません");
 	     }
 	     
-	     scanner.close();
+	     
 	     
 	     
 /*****************************
@@ -228,7 +228,7 @@ public class Question4 {
 	     }
 	     
 	     
-	     
+	     scanner.close();
 	     
 	     
 	     
