@@ -143,6 +143,11 @@ public class Question5 {
    }
 }
 
+/**************
+ * 
+ *   Qes4用のクラス
+ * 
+ **************/
 
 class Greeting{
 	 public void sayHello() {
@@ -151,6 +156,12 @@ class Greeting{
 	 }
 	 
 }
+
+/**************
+ * 
+ *   Qes5用のクラス
+ * 
+ **************/
 
 class Animal{
 	private String name;
