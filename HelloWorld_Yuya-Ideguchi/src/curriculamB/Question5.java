@@ -1,7 +1,6 @@
 package curriculamB;
 
 public class Question5 {
-	public class Main{
 
 		// TODO 自動生成されたメソッド・スタブ
 
@@ -22,8 +21,8 @@ public class Question5 {
 /*****************************
  *  
  *   【概要】Qes2 次の条件を満たすメソッド　doubleValue を作成
- *   　　　     →因数:整数(intnum)
- *              →戻り値:誠意数(引数の2倍の値)
+ *   　　　     →引数:整数(intnum)
+ *              →戻り値:整数(引数の2倍の値)
  *              →次のように表示　10を2倍すると20です。(1,2,3の結果に表示)
  *  
  *****************************/	
@@ -56,7 +55,7 @@ public class Question5 {
 	    public static void main(String[] args) {
 /*************
  * 	    
- *  Qew1 表示
+ *  Qes1 表示
  * 
  *************/
 	
@@ -93,8 +92,8 @@ public class Question5 {
 	     }else {
 	    	 System.out.println(num2 + "は奇数です。");
 	     }
-	    
-	    
+	
+		    
 /*****************************
  *  
  *   【概要】Qes4　次の2つのクラスを作成し、mainクラスからGreetingクラスのメソッドを呼び出す
@@ -105,12 +104,12 @@ public class Question5 {
  *               →GreetingクラスをインポートしてsayHello()を実行　(全ての結果に表示)
  *   
  *****************************/	
-	    	
+	     
 	     Greeting greeting = new Greeting();
-	     
+	     	     
 	     greeting.sayHello();
-	     
-	    				
+	     	     
+	     	    				
 /*****************************
  *  
  *   【概要】Qes5 次のクラスを作成し、下記がコンソールに出力されるように作成してください
@@ -120,7 +119,7 @@ public class Question5 {
  *              →速度:80km/h
  *              
  *              →Animal java(別のクラス)
- *              →動物名、体調、速度の変数を持ち各変数のgetterとsetterを作成
+ *              →動物名、体長、速度の変数を持ち各変数のgetterとsetterを作成
  *              
  *              →Main java
  *              →変数の中身を設定し、出力の処理を行う　(全ての結果に表示)
@@ -128,71 +127,15 @@ public class Question5 {
  *****************************/	    
 
 	     Animal lion = new Animal();
-	     
+	     	     
 	     lion.setName("ライオン");
 	     lion.setLength(2.1);
 	     lion.setSpeed(80);
+	     	     
+	     	 System.out.println("動物名" + lion.getName());
+	     	 System.out.println("体長" + lion.getLength() + "m");
+	     	 System.out.println("速度" + lion.getSpeed() + "km/h");	     
 	     
-	     System.out.println("動物名" + lion.getName());
-	     System.out.println("体長" + lion.getLength() + "m");
-	     System.out.println("速度" + lion.getSpeed() + "km/h");
+}
 	    
-	
-    }	
-	
-   }
 }
-
-/**************
- * 
- *   Qes4用のクラス
- * 
- **************/
-
-class Greeting{
-	 public void sayHello() {
-		 System.out.println("こんにちは！");
-		 
-	 }
-	 
-}
-
-/**************
- * 
- *   Qes5用のクラス
- * 
- **************/
-
-class Animal{
-	private String name;
-	private double length;
-	private int speed;
-	
-	public String getName() {
-        return this.name;
-    }
-
-    public void setName(String name){
-        this.name = name;
-    }
-
-    public double getLength() {
-        return this.length;	
-    }
-
-    public void setLength(double length) {
-        this.length = length;
-    }
-
-    public int getSpeed() {
-        return this.speed;
-    }
-
-    public void setSpeed(int speed) {
-        this.speed = speed;
-     }   
-	
-}
-
-
-
