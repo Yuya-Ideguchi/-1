@@ -36,7 +36,7 @@ public class Main {
  ************************/			
 		
 		Employee emp1 = new Employee("E002","田中花子");
-		System.out.println("社員ID :" + emp1.getEmployeeId1() + ", 名前 :" + emp1.getName2());
+		System.out.println("社員ID :" + emp1.getEmployeeId1() + " 名前 :" + emp1.getName2());
 		
 		
 		
