@@ -1,6 +1,6 @@
-package object_oriented;
+package basic_concept;
 
-public class Main1 {
+public class Main {
 
 	public static void main(String[] args) {
 
@@ -10,7 +10,7 @@ public class Main1 {
  * 
  ************************/
 		
-		Employee1 emp = new Employee1();
+		Employee emp = new Employee();
 		
 		emp.name = "山田太郎";
 		

@@ -1,6 +1,6 @@
-package object_oriented;
+package basic_concept;
 
-public class Employee1 {
+public class Employee {
 
 		// TODO 自動生成されたメソッド・スタブ
 /************************+++++++++++++++++
