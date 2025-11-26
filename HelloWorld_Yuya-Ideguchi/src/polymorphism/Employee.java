@@ -44,8 +44,8 @@ public abstract class Employee {
 *      
 **************************************************/
 	
-	protected String id;
-	protected String name;
+	private String id;
+	private String name;
 	
 	public Employee(String id, String name) {
 	
@@ -54,10 +54,10 @@ public abstract class Employee {
 	}
 	
 	public String getEmployeeId() {
-		return this.getEmployeeId();
+		return this.id;
 	}
 	
-	public String getNmae() {
+	public String getName() {
 		return this.name;
 	}
 	
