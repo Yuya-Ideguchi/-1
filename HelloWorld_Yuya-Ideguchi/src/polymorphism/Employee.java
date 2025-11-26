@@ -53,6 +53,14 @@ public abstract class Employee {
 	    this.name = name;
 	}
 	
+	public String getEmployeeId() {
+		return this.getEmployeeId();
+	}
+	
+	public String getNmae() {
+		return this.name;
+	}
+	
 	public abstract int calculateDailyWage(int hoursWorked);
 	
 	
