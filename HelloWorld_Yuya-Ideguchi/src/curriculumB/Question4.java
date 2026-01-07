@@ -1,4 +1,4 @@
-package curriculamB;
+package curriculumB;
 
 import java.util.Scanner;
 

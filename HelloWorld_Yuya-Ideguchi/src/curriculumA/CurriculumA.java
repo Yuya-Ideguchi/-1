@@ -1,7 +1,7 @@
 //　クラス
-package curriculamA;
+package curriculumA;
 
-public class CurriculamA {
+public class CurriculumA {
 	
 /**************************
  * 
