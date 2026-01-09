@@ -1,10 +1,13 @@
 package curriculum.C;
 
+import java.util.Scanner;
+
 public class Question6 {
 
 	public static void main(String[] args) {
 		
-		Player player = new Player();
+		Scanner scanner = new Scanner(System.in);
+		Player player = new Player(scanner);
 		CPU cpu =new CPU();
 		
 		while(true) {
@@ -23,6 +26,9 @@ public class Question6 {
 				System.out.println("あなたの負けです。もう一度！");
 			}
 		}
+		
+		scanner.close();
+		
 	}
 	
 	
@@ -39,6 +45,9 @@ public class Question6 {
 		  return(player == 0 && cpu == 1) ||
 				(player == 1 && cpu == 2) ||
 				(player == 2 && cpu == 0);
+		  
+		  
+		 
 	}
 	
 	
